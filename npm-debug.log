@@ -1,0 +1,70 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.4.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'classnames',
+1 verbose cli   '--save' ]
+2 info using npm@3.3.12
+3 info using node@v5.4.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData classnames
+8 silly fetchNamedPackageData classnames
+9 silly mapToRegistry name classnames
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/classnames
+13 verbose request uri https://registry.npmjs.org/classnames
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 10:32:25 AM
+16 verbose request id b0a2d5d0eb986277
+17 http request GET https://registry.npmjs.org/classnames
+18 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND get-alpha-pitc-sso.corporate.ge.com get-alpha-pitc-sso.corporate.ge.com:80
+19 info attempt registry request try #2 at 10:32:35 AM
+20 http request GET https://registry.npmjs.org/classnames
+21 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND get-alpha-pitc-sso.corporate.ge.com get-alpha-pitc-sso.corporate.ge.com:80
+22 info attempt registry request try #3 at 10:33:35 AM
+23 http request GET https://registry.npmjs.org/classnames
+24 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND get-alpha-pitc-sso.corporate.ge.com get-alpha-pitc-sso.corporate.ge.com:80
+24 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:174:17)
+24 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+24 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+24 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+24 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:264:9)
+24 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+24 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+24 silly fetchPackageMetaData     at connectErrorNT (net.js:998:8)
+24 silly fetchPackageMetaData     at nextTickCallbackWith2Args (node.js:478:9)
+24 silly fetchPackageMetaData     at process._tickCallback (node.js:392:17)
+24 silly fetchPackageMetaData  error for classnames { [Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND get-alpha-pitc-sso.corporate.ge.com get-alpha-pitc-sso.corporate.ge.com:80] code: 'ECONNRESET' }
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Starting
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND get-alpha-pitc-sso.corporate.ge.com get-alpha-pitc-sso.corporate.ge.com:80
+30 verbose stack     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:174:17)
+30 verbose stack     at ClientRequest.g (events.js:260:16)
+30 verbose stack     at emitOne (events.js:77:13)
+30 verbose stack     at ClientRequest.emit (events.js:169:7)
+30 verbose stack     at Socket.socketErrorListener (_http_client.js:264:9)
+30 verbose stack     at emitOne (events.js:77:13)
+30 verbose stack     at Socket.emit (events.js:169:7)
+30 verbose stack     at connectErrorNT (net.js:998:8)
+30 verbose stack     at nextTickCallbackWith2Args (node.js:478:9)
+30 verbose stack     at process._tickCallback (node.js:392:17)
+31 verbose cwd /Users/fareezahmed/Desktop/kanban-app
+32 error Darwin 14.5.0
+33 error argv "/usr/local/Cellar/node/5.4.0/bin/node" "/usr/local/bin/npm" "install" "classnames" "--save"
+34 error node v5.4.0
+35 error npm  v3.3.12
+36 error code ECONNRESET
+37 error network tunneling socket could not be established, cause=getaddrinfo ENOTFOUND get-alpha-pitc-sso.corporate.ge.com get-alpha-pitc-sso.corporate.ge.com:80
+37 error network This is most likely not a problem with npm itself
+37 error network and is related to network connectivity.
+37 error network In most cases you are behind a proxy or have bad network settings.
+37 error network
+37 error network If you are behind a proxy, please make sure that the
+37 error network 'proxy' config is set properly.  See: 'npm help config'
+38 verbose exit [ 1, true ]
